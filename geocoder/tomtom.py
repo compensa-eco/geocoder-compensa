@@ -104,7 +104,9 @@ class TomtomQuery(MultipleResultsQuery):
             'countrySet': kwargs.get('countrySet'),
             'lon': kwargs.get('lon'),
             'lat': kwargs.get('lat'),
-            'radius': kwargs.get('radius')
+            'radius': kwargs.get('radius'),
+            'language': kwargs.get('language'),
+            'entityTypeSet': kwargs.get('entityTypeSet'),
         }
 
     def _before_initialize(self, location, **kwargs):

@@ -1,7 +1,7 @@
 .PHONY: docs
 
 setup:
-	python setup.py install
+	python -m pip install .
 
 init:
 	pip install -r requirements.txt
@@ -21,8 +21,7 @@ tox:
 	tox
 
 publish:
-	python setup.py sdist upload -r pypi
-	python setup.py bdist_wheel upload -r pypi
+	python -m build
 
 docs:
 	make -C docs html

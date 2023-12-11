@@ -22,14 +22,15 @@ with open('README.md', 'r', 'utf-8') as f:
 requires = ['requests', 'ratelim', 'click', 'six', 'future']
 
 setup(
-    name='geocoder',
+    name='geocoder-compensa',
     version=version,
     description="Geocoder is a simple and consistent geocoding library.",
     long_description=readme,
+    long_description_content_type='text/markdown',
     author='Denis Carriere',
     author_email='carriere.denis@gmail.com',
-    url='https://github.com/DenisCarriere/geocoder',
-    download_url='https://github.com/DenisCarriere/geocoder',
+    url='https://github.com/compensa-eco/geocoder-compensa',
+    download_url='https://github.com/compensa-eco/geocoder-compensa',
     license="The MIT License",
     entry_points='''
         [console_scripts]
